@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade </title>
+    <style>
+        body{
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <label for="prova-1">Prova 1:</label> <input type="number" name="prova1" id="prova1"> <br>
+    <label for="prova-2">Prova 2:</label> <input type="number" name="prova2" id="prova2">
+    <br>
+    <form>
+        <input type="radio" name="media" id="medA"> <label for="Aritimética">Média Aritimética</label>
+        <input type="radio" name="media" id="medP"> <label for="Ponderada">Média Ponderada</label>
+    </form>
+    <br>
+    <input type="button" value="Calular" onclick="calcular()">
+    <input type="button" value="Limpar" onclick="window.location.reload()">
+    <p id="res"></p>
+    <p id="AproRepro"></p>
+    <script>
+        var x = document.getElementById('medA').checked
+        function calcular(){
+            var not1 = window.document.getElementById('prova1')
+            var not2 = window.document.getElementById('prova2')
+            var res = window.document.getElementById('res')
+            var AproRepro = window.document.getElementById('AproRepro')
+            var n1 = Number(not1.value)
+            var n2 = Number(not2.value)
+            if(document.getElementById('medA').checked){
+                res.innerHTML = ((n1+n2)/2)  
+            }else{
+                res.innerHTML = ((n1*2+n2*4)/6)
+            }
+            if ( res.innerHTML >= 60 ) {
+                AproRepro.innerHTML = ("Aprovado");
+            } else if ( res.innerHTML >= 30 && res.innerHTML < 60 ) {
+                AproRepro.innerHTML = ("Reprovado");
+            } else {
+                AproRepro.innerHTML = ("Recuperação");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container {
+    position: relative;
+  }
+  .texto {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #ffffff;
+    font-family: Montserrat;
+  }
+  
+  img {
+    margin: 0 auto;
+    top: 50%;
+    left: 50%; 
+    width: 1280px;
+    height: 720px;
+  }
+
+  #filho3{
+    width: 640px;
+    height: 360px;
+    text-align: justify;
+    background: rgb(100, 99, 99);
+    font-size: 30px;
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 49%;
+    bottom: 0;
+    left: 0;
+    right: 33.7%;
+    opacity: 0.6;
+  }
+
+  #borda{
+    text-align: center;
+    margin:0px;
+    top:20px;
+    width: 90%;
+    background-color:#305a7f;
+    opacity:30;
+    color: white;
+    text-align: left;
+    font-family: Montserrat; 
+}
+
+#h31 {
+    font-family: Montserrat;
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+    font-family: Montserrat;
+    width: 45%;
+    border: 1px solid ;
+    border-color: white;
+    text-align: left;
+}
+
+th {
+    background-color: #305a7f ;
+    color: white; 
+}
+
+td {
+    color: #305a7f;
+    padding: 15px;
+}
+
+#container {
+    position: relative;
+    }
+    
+    #texto {
+        position: absolute;
+        text-align: center;
+        top: 82%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #D0E5F3;
+        font-family: Montserrat;
+    }
+    
+    #autor{
+        position: absolute;
+        top: 89%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        color: #D0E5F3;
+        font-family: Montserrat;
+    }
+    
+    img { 
+        width: 1280px;
+        height: 720px;
+        border: 1px solid black;
+    }

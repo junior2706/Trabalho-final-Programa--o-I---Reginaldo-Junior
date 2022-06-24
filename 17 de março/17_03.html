@@ -1,0 +1,50 @@
+# index
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula formulários</title>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+    <form action="" method="get">
+        <input type="text" name="telefone"
+               placeholder="(99)9999-9999"
+               size="=30" maxlength="13">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" 
+               placeholder="informe sua senha">
+        <label>Brasileiro nato?<input type="checkbox" name="bras">
+        </label>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo"
+                   value="M" id="masc">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo"
+                   value="F" id="fem">
+        </fieldset>
+        <br>
+        <label for="mensagem">Escreva uma mensagem:</label>
+        <br>
+        <textarea id="mensagem" name="mensagem"
+                  rows="20" cols="20"
+                  placeholder="Sua mensagem aqui..."></textarea>
+        <fieldset>
+            <legend>Estado</legend>
+            <select name="estado">
+                <option selected disabled>Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapá</option>
+                <option value="BA">Bahia</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+</head>
+<body>
+    <fieldset>
+        <div class="row  bg-warning">
+        <span class="col-11 text-center"><b>Atividade sobre Km</b></span>
+        <span class="col-1">
+        </span>
+        </div>
+        <br>
+        <div>
+        <form>
+    <div class="container">
+        <label for="km">Km:</label>
+            <input type="number" id="km" name="km">
+            <br><br>
+            <label for="tipo">Tipo de Carro:</label>
+            <select name="tipo" id="tipo">
+                <option>Selecione</option>
+                <option value="a">Carro A</option>
+                <option value="b">Carro B</option>
+                <option value="c">Carro C</option>
+                <br>
+            </select>
+                <br><br>
+                <input type="checkbox" id="ar-cond" name="ar-cond">
+                <label for="ar-cond">Ar Condicionado</label>
+                <br><br>
+                <input type="button" value="Calcular" id="botao1">&emsp;&emsp;
+                <input type="reset" value="Limpar" id="botao2">
+       
+            </form>
+        </div>
+            </div>
+            <div>
+            <p id="consumo"></p>
+            </div>
+        </fieldset>
+                <script>
+                    var km1 = document.getElementById("km");
+                    var tipo1 = document.getElementById("tipo");
+                    var arcond = document.getElementById("ar-cond");
+                    botao1.onclick = function(){
+                       
+                    if (tipo1.value === "a"){
+                        consumo1 = km1.value / 8;
+                        if (arcond.checked === true){
+                           var acr = consumo1 * 0.95;
+                           consumo1 = acr;
+                        }
+                        }
+                    else if (tipo1.value === "b"){
+                        consumo1 = km1.value /9;
+                        if (arcond.checked === true){
+                           var acr = consumo1 * 0.95;
+                           consumo1 = acr;
+                        }
+                        }      
+                    else if (tipo1.value === "c"){
+                        consumo1 = km1.value /12;
+                        if (arcond.checked === true){
+                           var acr = consumo1 * 0.5;
+                           consumo1 = acr;    
+                        }                    
+                    }
+                        document.getElementById("consumo").innerHTML = "A quantidade de combustivel estimado eh: " + consumo1.toFixed(2);
+            }
+
+                </script>
+    </div>                                                            
+    </body>
+
+</html>
